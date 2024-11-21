@@ -495,6 +495,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: gravity
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: gravityMultiplier
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}
