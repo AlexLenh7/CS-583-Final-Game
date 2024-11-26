@@ -7,8 +7,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playerPrefab;
     private GameObject playableChar;
 
-    //[SerializeField] GameObject gruntPrefab;
-    //[SerializeField] GameObject upGruntPrefab;
     [SerializeField] GameObject playerSpawner;
     private bool gameStarted = false;
 
@@ -17,7 +15,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         playerSpawner = GameObject.Find("Player Spawn");
-        Instantiate(playerPrefab, playerSpawner.transform.position + new Vector3(0, 3, 0), Quaternion.Euler(0, 0, 0));
+        Instantiate(playerPrefab, playerSpawner.transform.position + new Vector3(0, 5, 0), Quaternion.Euler(0, 0, 0));
         playableChar = GameObject.Find("Player");
 
         gameStarted = true;
@@ -28,13 +26,15 @@ public class GameManager : MonoBehaviour
     {
         if(gameStarted)
         {
-            //if (playableChar.GetComponent<PlayerMovement>().isDead == true)
-            //{
-                //Destroy(playableChar);
-                //gameStarted = false;
+            if (playableChar.GetComponent<PlayerStats>().isDead == true)
+            {
+                Destroy(playableChar);
+                gameStarted = false;
                 //Do game over screen
                 //Change scene if needed
-            //}
+            }
+
+            //More checks for whatever circumstances here
         }
 
 

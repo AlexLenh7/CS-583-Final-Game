@@ -6,8 +6,8 @@ public class PlayerStats : MonoBehaviour
 {
     public Health healthBar;
     public Mana manaBar;     
-    public int maxHealth = 100;
-    public int currentHealth;
+    public int maxHP = 100;
+    public int currHP;
     public int maxMana = 100;
     public int currentMana;
     public bool isDead = false;
@@ -16,17 +16,17 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currHP = maxHP;
         currentMana = maxMana;
 
-        healthBar.InitializeBars(maxHealth);
-        healthBar.UpdateHealthBar(currentHealth);
+        healthBar.InitializeBars(maxHP);
+        healthBar.UpdateHealthBar(currHP);
 
         manaBar.InitializeBars(maxMana);
         manaBar.UpdateManaBar(currentMana);
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         // if dead skip damage
         if (isDead)
@@ -35,21 +35,21 @@ public class PlayerStats : MonoBehaviour
         }
 
         // subtract health and update health bar
-        currentHealth -= damage;
-        if (currentHealth < 0) 
+        currHP -= damage;
+        if (currHP < 0) 
         {
-            currentHealth = 0;
+            currHP = 0;
         }
 
         if (healthBar != null)
         {
-            healthBar.UpdateHealthBar(currentHealth);
+            healthBar.UpdateHealthBar(currHP);
         }
 
         //Debug.Log("Player took " + damage + " damage. Current health: " + currentHealth);
 
         // call die function
-        if (currentHealth == 0 && !isDead)
+        if (currHP == 0 && !isDead)
         {
             Die();
         }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class Grunt : MonoBehaviour
 {
     // hp of the grunt
-    public int health = 50;
+    public int currHP;
+    public int maxHP = 100;
 
     // move speed of the grunt
     public float moveSpeed = 3f;
@@ -17,7 +18,7 @@ public class Grunt : MonoBehaviour
     public float rotationSpeed = 10f;
 
     void Awake() {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("PlayerChar").transform;
     }
 
     void FixedUpdate()

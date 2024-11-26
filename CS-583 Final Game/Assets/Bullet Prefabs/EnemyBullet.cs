@@ -56,8 +56,8 @@ public class EnemyBullet : MonoBehaviour
         {
             if (collidedWith.CompareTag("PlayerChar"))
             {
-                //Alex did not add health yet so keep this commented until he adds it.
-                //collidedWith.GetComponent<PlayerMovement>().CurrHP -= damage;
+                //Inflict damage to character
+                collidedWith.GetComponent<PlayerStats>().TakeDamage(damage);
 
                 Destroy(gameObject);
             }
@@ -67,8 +67,8 @@ public class EnemyBullet : MonoBehaviour
             //If it hits a player, deal damage and self destruct
             if (collidedWith.CompareTag("PlayerChar"))
             {
-                //Alex did not add health yet so keep this commented until he adds it.
-                //collidedWith.GetComponent<PlayerMovement>().CurrHP -= damage;
+                //Inflict damage to character
+                collidedWith.GetComponent<PlayerStats>().TakeDamage(damage);
 
                 Destroy(gameObject);
             }
