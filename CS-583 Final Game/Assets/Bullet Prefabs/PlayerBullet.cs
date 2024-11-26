@@ -30,6 +30,15 @@ public class PlayerBullet : MonoBehaviour
     {
         //Moves the bullet upwards in the direction based on the orientation of the bullet.
         rb.velocity = transform.up * speed;
+        if (isWave == true && transform.localScale.x > 0)
+        {
+            transform.localScale -= new Vector3(.1f, 0, 0);
+        }
+        else
+        {
+            transform.localScale = new Vector3(0, transform.localScale.y, transform.localScale.z);
+        }
+
     }
 
     //Will run after the specified amount of seconds in Invoke("selfDestruct", time)
