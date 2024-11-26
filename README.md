@@ -45,6 +45,8 @@ Rhenz Ong
 - Camera work
 - Item pickups (not set in stone)
 
+Early Game WIP Video
+https://youtu.be/C1ePHHeYYsQ
 
-
-
+Planning Document
+https://docs.google.com/document/d/1x8OIbSoenU0-fuH5RsCmPZ2LoIwZ24y2FnJCesm9HZ4/edit?tab=t.0
