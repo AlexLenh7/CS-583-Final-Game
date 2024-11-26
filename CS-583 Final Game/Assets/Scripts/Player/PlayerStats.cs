@@ -81,14 +81,14 @@ public class PlayerStats : MonoBehaviour
 
     // Test to see if health/mana bars work
     // delete if needed
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         TakeDamage(10); 
-    //         UseMana(15);    
-    //     }
-    // }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(10); 
+            UseMana(15);    
+        }
+    }
 }
 
 
