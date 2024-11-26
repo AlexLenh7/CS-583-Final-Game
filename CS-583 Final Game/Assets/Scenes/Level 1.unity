@@ -3608,19 +3608,24 @@ MonoBehaviour:
   - skillName: Lazer
     cooldownDuration: 2
     cooldownOverlay: {fileID: 1913980710}
+    manaCost: 15
     cooldownTimer: 0
   - skillName: Shotgun
     cooldownDuration: 2
     cooldownOverlay: {fileID: 968248756}
+    manaCost: 10
     cooldownTimer: 0
   - skillName: Single
     cooldownDuration: 2
     cooldownOverlay: {fileID: 1775128701}
+    manaCost: 5
     cooldownTimer: 0
   - skillName: WindSlash
     cooldownDuration: 2
     cooldownOverlay: {fileID: 566863086}
+    manaCost: 10
     cooldownTimer: 0
+  playerStats: {fileID: 1138468472}
 --- !u!4 &1131513690
 Transform:
   m_ObjectHideFlags: 0
