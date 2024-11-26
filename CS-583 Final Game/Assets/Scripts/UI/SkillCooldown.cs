@@ -9,10 +9,12 @@ public class SkillCooldown: MonoBehaviour
         public string skillName;
         public float cooldownDuration;
         public Image cooldownOverlay; 
+        public int manaCost;
         [HideInInspector] public float cooldownTimer;
     }
 
     public Skill[] skills;
+    public PlayerStats playerStats;
 
     void Update()
     {
@@ -44,25 +46,32 @@ public class SkillCooldown: MonoBehaviour
 
     public void UseSkill(int skillIndex)
     {
-        if (skillIndex < 0 || skillIndex >= skills.Length)
+        if (skillIndex < 0 || skillIndex >= skills.Length) 
         {
-            Debug.LogWarning("Invalid skill index");
             return;
         }
 
-        var skill = skills[skillIndex];
-        if (skill.cooldownTimer <= 0)
-        {
-            // Trigger the skill (logic for skill activation goes here)
-            Debug.Log($"Skill {skill.skillName} activated!");
+        Skill skill = skills[skillIndex];
 
-            // Start cooldown
-            skill.cooldownTimer = skill.cooldownDuration;
-        }
-        else
+        // Check if player has enough mana
+        if (playerStats.currentMana < skill.manaCost)
         {
-            Debug.Log($"Skill {skill.skillName} is on cooldown!");
+            //Debug.Log($"Not enough mana to use {skill.skillName}!");
+            return;
         }
+
+        // Check if skill is on cooldown
+        if (skill.cooldownTimer > 0)
+        {
+            //Debug.Log($"{skill.skillName} is on cooldown!");
+            return;
+        }
+
+        // Deduct mana and start cooldown
+        playerStats.UseMana(skill.manaCost);
+        skill.cooldownTimer = skill.cooldownDuration;
+
+        //Debug.Log($"Used skill: {skill.skillName}, Mana Cost: {skill.manaCost}");
     }
 }
 

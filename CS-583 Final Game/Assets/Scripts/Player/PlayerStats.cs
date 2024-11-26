@@ -19,58 +19,71 @@ public class PlayerStats : MonoBehaviour
         currentHealth = maxHealth;
         currentMana = maxMana;
 
-        if (healthBar != null)
-        {
-            healthBar.InitializeBars(maxHealth);
-            healthBar.UpdateHealthBar(currentHealth);
-        }
+        healthBar.InitializeBars(maxHealth);
+        healthBar.UpdateHealthBar(currentHealth);
 
-        if (manaBar != null)
-        {
-            manaBar.InitializeBars(maxMana);
-            manaBar.UpdateManaBar(currentMana);
-        }
+        manaBar.InitializeBars(maxMana);
+        manaBar.UpdateManaBar(currentMana);
     }
 
     void TakeDamage(int damage)
     {
-        if (isDead) return;
+        // if dead skip damage
+        if (isDead)
+        {
+            return;
+        }
 
+        // subtract health and update health bar
         currentHealth -= damage;
-        if (currentHealth < 0) currentHealth = 0;
+        if (currentHealth < 0) 
+        {
+            currentHealth = 0;
+        }
 
         if (healthBar != null)
         {
             healthBar.UpdateHealthBar(currentHealth);
         }
 
-        Debug.Log("Player took " + damage + " damage. Current health: " + currentHealth);
+        //Debug.Log("Player took " + damage + " damage. Current health: " + currentHealth);
 
+        // call die function
         if (currentHealth == 0 && !isDead)
         {
             Die();
         }
     }
 
-    void UseMana(int amount)
+    // function to use mana 
+    public void UseMana(int amount)
     {
-        if (currentMana <= 0) return;
+        // skip mana usage if there is none
+        if (currentMana <= 0) 
+        {
+            return;
+        }
 
+        // subtract mana and update mana bar
         currentMana -= amount;
-        if (currentMana < 0) currentMana = 0;
+        if (currentMana < 0) 
+        {
+            currentMana = 0;
+        }
 
         if (manaBar != null)
         {
             manaBar.UpdateManaBar(currentMana);
         }
 
-        Debug.Log("Player used " + amount + " mana. Current mana: " + currentMana);
+        //Debug.Log("Player used " + amount + " mana. Current mana: " + currentMana);
     }
 
     void Die()
     {
+        // set isdead to true
         isDead = true;
-        Debug.Log("Player has died.");
+        //Debug.Log("Player has died.");
 
         // Trigger any additional death animation
         // if (animator != null)
@@ -81,14 +94,14 @@ public class PlayerStats : MonoBehaviour
 
     // Test to see if health/mana bars work
     // delete if needed
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(10); 
-            UseMana(15);    
-        }
-    }
+    // void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         TakeDamage(10); 
+    //         UseMana(15);    
+    //     }
+    // }
 }
 
 
