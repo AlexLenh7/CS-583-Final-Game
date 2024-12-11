@@ -52,7 +52,7 @@ public class portalTwo : MonoBehaviour
                 enemyfrq = 0;
             }
             timer += Time.deltaTime; // Increment timer by frame time
-            if (timer >= .2f) // Check if .05 seconds have passed
+            if (timer >= .02f) // Check if .05 seconds have passed
             {
                 alphaLvl += 0.01f; // Decrease alphaLvl by 0.1
                 alphaLvl = Mathf.Clamp(alphaLvl, 0f, 1f); // Make sure alphaLvl stays within 0 to 1
@@ -69,9 +69,11 @@ public class portalTwo : MonoBehaviour
         }
         else
         {
-            timer += Time.deltaTime; // Increment timer by frame time
+            //keeps track of time passing
+            timer += Time.deltaTime; 
             if (timer >= .02f) // Check if .05 seconds have passed
             {
+                //Turns off collider
                 collider.enabled = false;
                 alphaLvl -= 0.01f; // Decrease alphaLvl by 0.1
                 alphaLvl = Mathf.Clamp(alphaLvl, 0f, 1f); // Make sure alphaLvl stays within 0 to 1

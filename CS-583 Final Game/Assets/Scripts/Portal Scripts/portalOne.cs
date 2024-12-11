@@ -23,8 +23,10 @@ public class PortalOne : MonoBehaviour
         //gets collider of object
         collider = GetComponent<Collider>();
 
-
+        //gets the render component
         portalRenderer = GetComponent<Renderer>();
+
+        //assighns 
         portalMaterial = portalRenderer.material;
 
     }
@@ -69,9 +71,6 @@ public class PortalOne : MonoBehaviour
 
                 // Set the new color with the same RGB values but updated alpha
                 portalMaterial.color = new Color(currentColor.r, currentColor.g, currentColor.b, alphaLvl);
-
-
-
 
                 timer = 0f; // Reset the timer
             }
