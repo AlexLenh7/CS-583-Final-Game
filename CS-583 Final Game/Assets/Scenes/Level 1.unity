@@ -3809,58 +3809,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5226873744311931384, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
   m_PrefabInstance: {fileID: 1138408627}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1138468465 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6874023534666276039, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+--- !u!114 &1138468472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6516039762336966280, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
   m_PrefabInstance: {fileID: 2112283487103459928}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1138468466
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138468465}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &1138468472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138468465}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07bfd7c393a3c9247bb6fdc8c4f1b751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 1722095784}
-  manaBar: {fileID: 392836207}
-  maxHP: 100
-  currHP: 0
-  maxMana: 100
-  currentMana: 0
-  isDead: 0
-  animator: {fileID: 0}
 --- !u!1001 &1163853333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6133,26 +6092,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
-      propertyPath: gravity
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
-      propertyPath: jumpForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
-      propertyPath: gravityMultiplier
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
+    - target: {fileID: 6516039762336966280, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: manaBar
+      value: 
+      objectReference: {fileID: 392836207}
+    - target: {fileID: 6516039762336966280, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1722095784}
     - target: {fileID: 6874023534666276039, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6160,13 +6107,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6874023534666276039, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1138468466}
-    - targetCorrespondingSourceObject: {fileID: 6874023534666276039, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1138468472}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
