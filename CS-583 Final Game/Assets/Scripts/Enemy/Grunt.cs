@@ -36,6 +36,9 @@ public class Grunt : MonoBehaviour
     transform.position += moveDirection * moveSpeed * Time.deltaTime;
 }
 
+    //Write enemy attack function here.
+    //It should rotate the bullet prefab's Y rotation to the enemy's Y rotation upon spawning.
+
 void RotateTowardsPlayer()
 {
     // Find direction to player
@@ -46,5 +49,6 @@ void RotateTowardsPlayer()
 
     // Smoothly rotate towards the player
     transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
 }
 }

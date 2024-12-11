@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(playableChar);
                 gameStarted = false;
-                //Do game over screen
+                //Invoke game over screen
                 //Change scene if needed
             }
 
@@ -38,5 +38,10 @@ public class GameManager : MonoBehaviour
         }
 
 
+    }
+
+    void gameOver()
+    {
+        // Display game over screen
     }
 }
