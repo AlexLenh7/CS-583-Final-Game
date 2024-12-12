@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private bool gameStarted = false;
 
     public GameObject gameOverUI;
-    public GameObject pauseMenu;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,23 +43,6 @@ public class GameManager : MonoBehaviour
             //More checks for whatever circumstances here
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Pause();
-        }
-
-    }
-
-    public void Pause()
-    {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
-    }
-
-    public void Resume()
-    {
-        pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
     }
 
     void gameOver()

@@ -17,11 +17,6 @@ public class Enemy : MonoBehaviour
     // rotation speed of the Enemy
     public float rotationSpeed = 10f;
 
-    // time in between shots
-    public float attackCD = 0f;
-    public float minTimeShots = 3f;
-    public float maxTimeShots = 7f;
-
     // bullet prefabs to use as a set of GameObjects
     public GameObject[] bullets;
     
@@ -32,7 +27,6 @@ public class Enemy : MonoBehaviour
         // follows player
         player = GameObject.FindGameObjectWithTag("PlayerChar").transform;
         Debug.Log("Enemy HP: " + currHP);
-        attackCD = Random.Range(minTimeShots, maxTimeShots);
     }
 
     void FixedUpdate()
@@ -40,14 +34,10 @@ public class Enemy : MonoBehaviour
         MoveToPlayer();
         RotateTowardsPlayer();
         
-        // Attack player
-        attackCD -= Time.fixedDeltaTime;
-        if (attackCD <= 0f)
+        if (Random.value < 0.01f)
         {
             Attack();
-            attackCD = Random.Range(minTimeShots, maxTimeShots);
         }
-
     }
 
     void MoveToPlayer()

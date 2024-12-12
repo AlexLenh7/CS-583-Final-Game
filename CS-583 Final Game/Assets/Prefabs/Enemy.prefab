@@ -101,12 +101,13 @@ MonoBehaviour:
   maxHP: 100
   moveSpeed: 3
   rotationSpeed: 10
-  attackCD: 0
-  minTimeShots: 4
-  maxTimeShots: 9
   bullets:
+  - {fileID: 2175489247178338196, guid: 0a13275d3e8819a428062e57618cbe4b, type: 3}
+  - {fileID: 817708168727659270, guid: cd0bc764e9b147a4084ba1f0423783be, type: 3}
+  - {fileID: 8130268302306693931, guid: fe2d22ce56f59ab459d9173a02601211, type: 3}
   - {fileID: 7349422093586316064, guid: 45d370f747a179d44854fb7bbd3ea717, type: 3}
   - {fileID: 8641246681665333135, guid: 58d8c9fc741dc88489e82bf0528e0203, type: 3}
+  - {fileID: 8824620223449066514, guid: ea585cd8f8e74024098c0e63065ae4fc, type: 3}
   firePoint: {fileID: 3192794615613677756}
 --- !u!1 &8895546809149781443
 GameObject:
