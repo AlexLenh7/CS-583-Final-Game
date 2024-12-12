@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (15)
@@ -296,6 +300,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (24)
@@ -358,6 +366,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (1)
@@ -419,6 +431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (16)
@@ -662,6 +678,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (9)
@@ -724,6 +744,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (28)
@@ -887,6 +911,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (24)
@@ -1054,6 +1082,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (2)
@@ -1116,6 +1148,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (3)
@@ -1179,6 +1215,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: roundEnd
       value: 2
       objectReference: {fileID: 0}
@@ -1239,6 +1279,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (2)
@@ -1518,6 +1562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (12)
@@ -1580,6 +1628,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (32)
@@ -1647,6 +1699,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (5)
@@ -1709,6 +1765,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (3)
@@ -1771,6 +1831,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (13)
@@ -1939,6 +2003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (14)
@@ -2274,6 +2342,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (20)
@@ -2352,6 +2424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (7)
@@ -2489,6 +2565,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (6)
@@ -2551,6 +2631,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (18)
@@ -2613,6 +2697,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (23)
@@ -2740,6 +2828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (10)
@@ -3036,6 +3128,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (1)
@@ -3098,6 +3194,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (17)
@@ -3228,6 +3328,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (7)
@@ -3290,6 +3394,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (15)
@@ -3357,6 +3465,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (29)
@@ -3551,6 +3663,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (13)
@@ -3796,6 +3912,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (17)
@@ -3990,6 +4110,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (21)
@@ -4052,6 +4176,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (19)
@@ -4220,6 +4348,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (22)
@@ -4282,6 +4414,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (11)
@@ -4344,6 +4480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (14)
@@ -4436,7 +4576,7 @@ MonoBehaviour:
   - skillName: Single
     cooldownDuration: 0.2
     cooldownOverlay: {fileID: 1775128701}
-    manaCost: 0
+    manaCost: 2
     cooldownTimer: 0
   - skillName: Beam
     cooldownDuration: 2
@@ -4477,6 +4617,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (9)
@@ -4555,6 +4699,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (8)
@@ -4722,6 +4870,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (6)
@@ -4784,6 +4936,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (21)
@@ -4846,6 +5002,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (26)
@@ -4908,6 +5068,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (4)
@@ -4970,6 +5134,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (23)
@@ -5032,6 +5200,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (30)
@@ -5094,6 +5266,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (10)
@@ -5156,6 +5332,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (1)
@@ -5218,6 +5398,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (25)
@@ -5355,6 +5539,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (11)
@@ -5417,6 +5605,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (8)
@@ -5479,6 +5671,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (5)
@@ -5617,6 +5813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (31)
@@ -5809,6 +6009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (12)
@@ -5871,6 +6075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (19)
@@ -5933,6 +6141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (20)
@@ -6166,6 +6378,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (4)
@@ -6586,6 +6802,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (27)
@@ -6799,6 +7019,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (16)
@@ -6861,6 +7085,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183534799}
     m_Modifications:
+    - target: {fileID: -5533347461318813726, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 1059035555532849378, guid: 0655aea6f36ad3548aace78f759725be, type: 3}
       propertyPath: m_Name
       value: Spawner1 (22)
@@ -7211,6 +7439,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494006292}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (18)
@@ -7425,6 +7657,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8662031878333188750, guid: 1e8d1f4e73a3fe94f93e38c35d481e3e, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
+    - target: {fileID: 8662031878333188750, guid: 1e8d1f4e73a3fe94f93e38c35d481e3e, type: 3}
       propertyPath: roundStart
       value: 1
       objectReference: {fileID: 0}
@@ -7496,6 +7732,10 @@ PrefabInstance:
     - target: {fileID: 2024437074087382883, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2053452421507794405, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6516039762336966280, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: manaBar
