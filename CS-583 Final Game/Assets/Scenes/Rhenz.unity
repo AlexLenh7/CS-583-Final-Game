@@ -370,6 +370,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1443863080}
     - target: {fileID: 6874023534666276039, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -390,6 +394,8 @@ GameObject:
   - component: {fileID: 1443863083}
   - component: {fileID: 1443863082}
   - component: {fileID: 1443863081}
+  - component: {fileID: 1443863084}
+  - component: {fileID: 1443863085}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -464,14 +470,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443863080}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: 0, y: 3.7, z: -3.6}
+  m_LocalRotation: {x: 0.41441023, y: -0, z: -0, w: 0.9100902}
+  m_LocalPosition: {x: 0, y: 5.67, z: -9.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1733839071}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 48.964, y: 0, z: 0}
+--- !u!114 &1443863084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443863080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1882bf21a4e4a0e4aae2f3048ec24350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1443863085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443863080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b853ebc5c732b54d952aa4f5d3d9eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1665394388}
+  smooth: 0.1225
+  height: 12
 --- !u!4 &1665394388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1013297841437158911, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
@@ -495,7 +528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1733839071
 Transform:
   m_ObjectHideFlags: 0
@@ -582,9 +615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed96dfb8b3c1547648ba230217ac62eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1665394388}
-  smoothTime: 0.3
-  offset: {x: 0, y: 11, z: -13}
+  player: {fileID: 0}
+  smooth: 0.1225
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
