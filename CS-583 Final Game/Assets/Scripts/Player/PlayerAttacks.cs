@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class PlayerAttacks : MonoBehaviour
 {
     [SerializeField] private float attackCooldownSingle;
@@ -18,6 +17,8 @@ public class PlayerAttacks : MonoBehaviour
     public GameObject Burst;
     public GameObject Wind;
 
+    public PlayerStats playerStats;
+
 
     private float cooldownTimerSingle = Mathf.Infinity;
     private float cooldownTimerBeam = Mathf.Infinity;
@@ -26,16 +27,16 @@ public class PlayerAttacks : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0) && cooldownTimerSingle > attackCooldownSingle)
+        if (Input.GetMouseButton(0) && cooldownTimerSingle > attackCooldownSingle && playerStats.currentMana > 1)
             shootSingle();
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) && cooldownTimerBeam > attackCooldownBeam)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && cooldownTimerBeam > attackCooldownBeam && playerStats.currentMana > 15)
             shootBeam();
 
-        if (Input.GetKeyDown(KeyCode.Q) && cooldownTimerBurst > attackCooldownBurst)
+        if (Input.GetKeyDown(KeyCode.Q) && cooldownTimerBurst > attackCooldownBurst && playerStats.currentMana > 10)
             shootBurst();
         
-        if (Input.GetKeyDown(KeyCode.E) && cooldownTimerWind > attackCooldownWind)
+        if (Input.GetKeyDown(KeyCode.E) && cooldownTimerWind > attackCooldownWind && playerStats.currentMana > 10)
             shootWind();
 
         cooldownTimerSingle += Time.deltaTime;
