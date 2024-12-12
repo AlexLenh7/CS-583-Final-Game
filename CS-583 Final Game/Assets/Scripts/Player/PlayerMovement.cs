@@ -10,14 +10,16 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public GameObject camera;
 
+	public GameObject playerObj;
+
     private Vector3 velocity;
     private bool isGrounded;
 
 
     void Update()
     {
-	    Movement();
-	    Jump();
+		Movement();
+		Jump();
 
 		// Player facing mouse
 	    Plane playerPlane = new Plane(Vector3.up, transform.position);
@@ -30,12 +32,11 @@ public class PlayerMovement : MonoBehaviour
 			Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
 			targetRotation.x = 0;
 			targetRotation.z = 0;
-			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 7f * Time.deltaTime);
+			playerObj.transform.rotation = Quaternion.Slerp(playerObj.transform.rotation, targetRotation, 7f * Time.deltaTime);
 
 	    }
 
     }
-
 
     void Movement()
     {
@@ -54,8 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 	    transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
-   }
-
+    }
 
     void Jump()
     {
@@ -80,7 +80,6 @@ public class PlayerMovement : MonoBehaviour
 
 	    transform.Translate(Vector3.up * velocity.y * Time.deltaTime);
     }
-
 
     void FixedUpdate()
     {
