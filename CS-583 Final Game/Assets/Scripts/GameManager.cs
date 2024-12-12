@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject VictoryScreen;
 
+    private bool gameWon = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameWon)
+        return;
+
         if(gameStarted)
         {
             if (playableChar.GetComponent<PlayerStats>().isDead == true)
@@ -53,23 +58,17 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
-        //logic for when boss dies
         if (Bosschar == null)
         {
-            // Attempt to find the boss if it has spawned
             Bosschar = GameObject.Find("BOSS");
-        }
-
-        if (Bosschar != null && Bosschar.GetComponent<Enemy>().isDead)
-        {
-            Victory();
         }
     }
 
     public void Victory()
     {
+        gameWon = true;
         VictoryScreen.SetActive(true);
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
     }
 
     public void Pause()

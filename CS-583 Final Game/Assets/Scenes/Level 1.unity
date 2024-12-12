@@ -6918,6 +6918,10 @@ PrefabInstance:
       propertyPath: gameOverUI
       value: 
       objectReference: {fileID: 1987484206}
+    - target: {fileID: -7573454974305137645, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
+      propertyPath: VictoryScreen
+      value: 
+      objectReference: {fileID: 567683040}
     - target: {fileID: 6688941486300598488, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
       propertyPath: m_Name
       value: GameOverlord
