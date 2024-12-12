@@ -25,8 +25,8 @@ public class bossPortal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Teleport the portal to y = 2 (appears)
-        transform.position = new Vector3(transform.position.x, 2f, transform.position.z);
+        // Teleport the portal to y = 5 (appears)
+        transform.position = new Vector3(transform.position.x, 5f, transform.position.z);
 
         time += Time.deltaTime;
         //while time is less 
