@@ -4576,7 +4576,7 @@ MonoBehaviour:
   - skillName: Single
     cooldownDuration: 0.2
     cooldownOverlay: {fileID: 1775128701}
-    manaCost: 2
+    manaCost: 1
     cooldownTimer: 0
   - skillName: Beam
     cooldownDuration: 2
