@@ -9,6 +9,7 @@ public class PlayerBullet : MonoBehaviour
     [SerializeField] float lifeTime; //time before bullet self destructs naturally
     [SerializeField] float speed; //speed of bullet
     [SerializeField] bool isWave = false;
+    [SerializeField] bool isWindSlash = false;
     [SerializeField] float pushPower = 200;
     private int numCollisions = 0;
     private Rigidbody rb;
@@ -30,7 +31,13 @@ public class PlayerBullet : MonoBehaviour
     {
         //Moves the bullet upwards in the direction based on the orientation of the bullet.
         rb.velocity = transform.up * speed;
-        if (isWave == true && transform.localScale.x > 0)
+
+
+        if (isWindSlash == true && isWave == true)
+        {
+            transform.localScale += new Vector3(.5f, 0, 0);
+        }
+        else if (isWave == true && transform.localScale.x > 0)
         {
             transform.localScale -= new Vector3(.1f, 0, 0);
         }

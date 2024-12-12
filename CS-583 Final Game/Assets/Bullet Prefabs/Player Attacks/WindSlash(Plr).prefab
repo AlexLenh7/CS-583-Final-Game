@@ -130,7 +130,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3280689729926694587, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
       propertyPath: speed
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -3280689729926694587, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
       propertyPath: damage
@@ -142,7 +142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3280689729926694587, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
       propertyPath: lifeTime
-      value: 0.15
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3280689729926694587, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
+      propertyPath: isWindSlash
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1155896233054762152, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
       propertyPath: m_Name
@@ -158,7 +162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6170661264636448351, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
       propertyPath: m_LocalScale.x
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6170661264636448351, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
       propertyPath: m_LocalScale.y
