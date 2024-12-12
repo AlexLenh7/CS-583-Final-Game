@@ -35,7 +35,7 @@ public class EnemyBullet : MonoBehaviour
 
         if (isWave == true && transform.localScale.x > 0)
         {
-            transform.localScale -= new Vector3(.1f, 0, 0);
+            transform.localScale -= new Vector3(.05f, 0, 0);
         }
         else if (isWave == true && transform.localScale.x < 0)
         {
