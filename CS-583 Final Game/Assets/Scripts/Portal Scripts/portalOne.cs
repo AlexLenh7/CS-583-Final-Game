@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PortalOne : MonoBehaviour
 {
-    private Collider collider;
-    public float alphaLvl = 1f; // Alpha level (no longer needed for teleportation, but leaving for clarity)
-    private float timer; // Timer for tracking time passed
+
     private float time;
     public float roundEnd;
     private float enemyfrq;
@@ -14,19 +12,11 @@ public class PortalOne : MonoBehaviour
     public GameObject enemy;
     public Transform enemyPos;
 
-    private Renderer portalRenderer; // To reference the Renderer component
-    private Material portalMaterial; // To reference the Material of the object
 
     void Start()
     {
-        // Gets collider of object
-        collider = GetComponent<Collider>();
 
-        // Gets the render component
-        portalRenderer = GetComponent<Renderer>();
 
-        // Assigns the material of the object
-        portalMaterial = portalRenderer.material;
     }
 
     // Update is called once per frame
@@ -36,8 +26,7 @@ public class PortalOne : MonoBehaviour
         // While time is less than roundEnd, run the game logic
         if (time < roundEnd)
         {
-            // Enables collider
-            collider.enabled = true;
+
             enemyfrq += Time.deltaTime;
 
             // Every 1 second, check for enemy spawn
@@ -56,16 +45,8 @@ public class PortalOne : MonoBehaviour
         }
         else
         {
-            timer += Time.deltaTime; // Increment timer by frame time
-            if (timer >= 0.02f) // Check if 0.02 seconds have passed
-            {
-                collider.enabled = false;
-
-                // Instead of modifying alpha, teleport the object
+                //teleport the object
                 TeleportPortal(); // Call the teleport function
-
-                timer = 0f; // Reset the timer
-            }
         }
     }
 
