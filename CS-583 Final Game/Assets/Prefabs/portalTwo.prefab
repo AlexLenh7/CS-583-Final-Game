@@ -120,9 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26620ea216d18434cba2870b216469d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alphaLvl: 0
-  roundEnd: 40
-  roundStart: 20
+  roundEnd: 50
+  roundStart: 30
   enemy: {fileID: 4728022507012924968, guid: fb17e4479cd558b42a482e99db01e08a, type: 3}
   enemyPos: {fileID: 4669793467435821426}
 --- !u!1 &2165944547489660451

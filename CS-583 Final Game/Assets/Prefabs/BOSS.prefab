@@ -277,7 +277,6 @@ MonoBehaviour:
   - {fileID: 8824620223449066514, guid: ea585cd8f8e74024098c0e63065ae4fc, type: 3}
   firePoint: {fileID: 4499095986706632815}
   BossDead: 0
-  gameManager: {fileID: 0}
 --- !u!114 &-6736021419561438881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,9 +303,9 @@ MonoBehaviour:
   - {fileID: 7349422093586316064, guid: 45d370f747a179d44854fb7bbd3ea717, type: 3}
   - {fileID: 8641246681665333135, guid: 58d8c9fc741dc88489e82bf0528e0203, type: 3}
   - {fileID: 8824620223449066514, guid: ea585cd8f8e74024098c0e63065ae4fc, type: 3}
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 4499095986706632815}
   BossDead: 0
-  gameManager: {fileID: 0}
+  gameManager: {fileID: -7573454974305137645, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
 --- !u!1 &5092629413779575219
 GameObject:
   m_ObjectHideFlags: 0
