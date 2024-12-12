@@ -11,13 +11,14 @@ public class EnemyBullet : MonoBehaviour
     [SerializeField] float lifeTime; //time before bullet self destructs naturally
     [SerializeField] float speed; //speed of bullet
     [SerializeField] bool isWave = false;
+    private bool hasHit = false;
     private int numCollisions = 0;
     private Rigidbody rb;
 
     void Start()
     {
         //Bullet will begin not moving
-
+        hasHit = false;
         rb = GetComponent<Rigidbody>();
         if (gameObject)
         {
@@ -54,10 +55,11 @@ public class EnemyBullet : MonoBehaviour
         //If the bullet is a wave, use this path of behavior
         if (isWave == true)
         {
-            if (collidedWith.CompareTag("PlayerChar"))
+            if (collidedWith.CompareTag("PlayerChar") && hasHit == false)
             {
-                //Inflict damage to character
+                //Inflict damage to character         
                 collidedWith.GetComponent<PlayerStats>().TakeDamage(damage);
+                hasHit = true;
 
                 Destroy(gameObject);
             }
