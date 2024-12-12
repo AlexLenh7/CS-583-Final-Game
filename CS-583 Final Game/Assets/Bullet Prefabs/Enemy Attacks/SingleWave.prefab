@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   lifeTime: 1
-  speed: 15
+  speed: 20
   isWave: 1
 --- !u!1 &8824620223449066514
 GameObject:
