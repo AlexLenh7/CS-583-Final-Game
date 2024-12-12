@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2053452421507794405}
   - component: {fileID: 6778134205141921427}
   - component: {fileID: 2619807058804489033}
-  - component: {fileID: -3522347508231571989}
   - component: {fileID: 8621407576706751879}
   m_Layer: 9
   m_Name: Player
@@ -144,30 +143,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7834c30aa49184db5e1bfa56e09dee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCooldownSingle: 0.2
+  attackCooldownBeam: 2
+  attackCooldownBurst: 2
+  attackCooldownWind: 2
   bulletSpawnPoint: {fileID: 6874023534666276039}
   waitTime: 3
   singleShot: {fileID: 7139839573537059559, guid: dad9d51609462fa48ba168f715fe334d, type: 3}
---- !u!114 &-3522347508231571989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6874023534666276039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07bfd7c393a3c9247bb6fdc8c4f1b751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  manaBar: {fileID: 0}
-  maxHP: 100
-  currHP: 0
-  maxMana: 100
-  currentMana: 0
-  isDead: 0
-  animator: {fileID: 0}
-  manaRegen: 20
+  Beam: {fileID: 8811597934686675921, guid: a47d67c58488c944c81444cfbbe76a0e, type: 3}
+  Burst: {fileID: 2212567169849450966, guid: 760458ba60c9ea04ab8b339ac4b7ebf9, type: 3}
+  Wind: {fileID: 5127585345607185572, guid: 623301e9ba2318140b719c2d359399f0, type: 3}
 --- !u!54 &8621407576706751879
 Rigidbody:
   m_ObjectHideFlags: 0

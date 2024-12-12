@@ -12,8 +12,7 @@ public class PlayerAttacks : MonoBehaviour
 
 
     public GameObject bulletSpawnPoint;
-    public float waitTime;
-    
+
     public GameObject singleShot;
     public GameObject Beam;
     public GameObject Burst;
@@ -27,23 +26,46 @@ public class PlayerAttacks : MonoBehaviour
 
     void Update()
     {
-        
         if (Input.GetMouseButton(0) && cooldownTimerSingle > attackCooldownSingle)
-        {
             shootSingle();
-        }
-        cooldownTimerSingle += Time.deltaTime;
 
+        if (Input.GetKeyDown(KeyCode.Mouse1) && cooldownTimerBeam > attackCooldownBeam)
+            shootBeam();
+
+        if (Input.GetKeyDown(KeyCode.Q) && cooldownTimerBurst > attackCooldownBurst)
+            shootBurst();
+        
+        if (Input.GetKeyDown(KeyCode.E) && cooldownTimerWind > attackCooldownWind)
+            shootWind();
+
+        cooldownTimerSingle += Time.deltaTime;
+        cooldownTimerBeam += Time.deltaTime;
+        cooldownTimerBurst += Time.deltaTime;
+        cooldownTimerWind += Time.deltaTime;
     }
 
     void shootSingle()
     {
-
         Instantiate(singleShot, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
-
         cooldownTimerSingle = 0;
-
     }
 
+    void shootBeam()
+    {
+        Instantiate(Beam, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
+        cooldownTimerBeam = 0;
+    }
+
+    void shootBurst()
+    {
+        Instantiate(Burst, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
+        cooldownTimerBurst = 0;
+    }
+
+    void shootWind()
+    {
+        Instantiate(Wind, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
+        cooldownTimerWind = 0;
+    }
 
 }
