@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     
     // firepoint to spawn bullets
     public Transform firePoint;
+    public bool isDead = false;
 
     void Awake() {
         // follows player
@@ -89,6 +90,7 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy took " + damage + " damage. Current health: " + currHP);
         if (currHP <= 0)
         {
+            isDead = true;
             Destroy(gameObject);
         }
     }
