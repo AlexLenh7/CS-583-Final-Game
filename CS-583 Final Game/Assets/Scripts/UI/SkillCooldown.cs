@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SkillCooldown: MonoBehaviour
+public class SkillCooldown : MonoBehaviour
 {
     [System.Serializable]
     public class Skill
@@ -18,12 +18,12 @@ public class SkillCooldown: MonoBehaviour
 
     void Update()
     {
-        // Change change input to something else if needed
+        // Change input to something else if needed
         // Check for keyboard input
-        if (Input.GetMouseButton(0)) UseSkill(0); // Press 1 for the first skill
-        if (Input.GetKeyDown(KeyCode.Mouse1)) UseSkill(1); // Press 2 for the second skill
-        if (Input.GetKeyDown(KeyCode.Q)) UseSkill(2); // Press 3 for the third skill
-        if (Input.GetKeyDown(KeyCode.E)) UseSkill(3); // Press 4 for the fourth skill
+        if (Input.GetMouseButton(0)) UseSkill(0); // Left Mouse Button for the first skill
+        if (Input.GetMouseButtonDown(1)) UseSkill(1); // Right Mouse Button for the second skill
+        if (Input.GetKeyDown(KeyCode.Q)) UseSkill(2); // Q for the third skill
+        if (Input.GetKeyDown(KeyCode.E)) UseSkill(3); // E for the fourth skill
 
         // Update cooldowns and overlays
         foreach (var skill in skills)
@@ -39,10 +39,10 @@ public class SkillCooldown: MonoBehaviour
             else if (skill.cooldownOverlay.gameObject.activeSelf)
             {
                 skill.cooldownOverlay.gameObject.SetActive(false);
+                skill.cooldownOverlay.fillAmount = 0f; // Reset overlay to ensure visual accuracy
             }
         }
     }
-
 
     public void UseSkill(int skillIndex)
     {
@@ -53,17 +53,17 @@ public class SkillCooldown: MonoBehaviour
 
         Skill skill = skills[skillIndex];
 
-        // Check if player has enough mana
-        if (playerStats.currentMana < skill.manaCost)
-        {
-            //Debug.Log($"Not enough mana to use {skill.skillName}!");
-            return;
-        }
-
         // Check if skill is on cooldown
         if (skill.cooldownTimer > 0)
         {
-            //Debug.Log($"{skill.skillName} is on cooldown!");
+            // Prevent further execution if the skill is on cooldown
+            return;
+        }
+
+        // Check if player has enough mana
+        if (playerStats.currentMana < skill.manaCost)
+        {
+            // Debug.Log($"Not enough mana to use {skill.skillName}!");
             return;
         }
 
@@ -71,8 +71,12 @@ public class SkillCooldown: MonoBehaviour
         playerStats.UseMana(skill.manaCost);
         skill.cooldownTimer = skill.cooldownDuration;
 
-        //Debug.Log($"Used skill: {skill.skillName}, Mana Cost: {skill.manaCost}");
+        // Initialize the visual cooldown overlay
+        skill.cooldownOverlay.fillAmount = 1f;
+
+        // Debug.Log($"Used skill: {skill.skillName}, Mana Cost: {skill.manaCost}");
     }
 }
+
 
 
