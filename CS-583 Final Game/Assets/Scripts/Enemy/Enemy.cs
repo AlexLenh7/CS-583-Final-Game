@@ -27,7 +27,18 @@ public class Enemy : MonoBehaviour
     
     // firepoint to spawn bullets
     public Transform firePoint;
-    public bool isDead = false;
+    public bool BossDead = false;
+
+    public GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene!");
+        }
+    }
 
     void Awake() {
         // follows player
@@ -85,12 +96,20 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Debug.Log(currHP);
         currHP -= damage;
         Debug.Log("Enemy took " + damage + " damage. Current health: " + currHP);
+
         if (currHP <= 0)
         {
-            isDead = true;
+            BossDead = true;
+            Debug.Log("BossDead set to true.");
+            
+            // Trigger victory logic in the GameManager
+            if (gameManager != null)
+            {
+                gameManager.Victory();
+            }
+            
             Destroy(gameObject);
         }
     }
