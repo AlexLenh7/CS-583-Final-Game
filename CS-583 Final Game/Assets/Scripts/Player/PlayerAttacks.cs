@@ -27,7 +27,7 @@ public class PlayerAttacks : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0) && cooldownTimerSingle > attackCooldownSingle && playerStats.currentMana > 1)
+        if (Input.GetMouseButton(0) && cooldownTimerSingle > attackCooldownSingle)
             shootSingle();
 
         if (Input.GetKeyDown(KeyCode.Mouse1) && cooldownTimerBeam > attackCooldownBeam && playerStats.currentMana > 15)
