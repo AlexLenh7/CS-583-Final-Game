@@ -11,8 +11,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playerSpawner;
     private bool gameStarted = false;
 
+    [SerializeField] GameObject Boss;
+    private GameObject Bosschar;
+
     public GameObject gameOverUI;
     public GameObject pauseMenu;
+    public GameObject VictoryScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(gameStarted)
         {
             if (playableChar.GetComponent<PlayerStats>().isDead == true)
@@ -48,6 +53,23 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
+        //logic for when boss dies
+        if (Bosschar == null)
+        {
+            // Attempt to find the boss if it has spawned
+            Bosschar = GameObject.Find("BOSS");
+        }
+
+        if (Bosschar != null && Bosschar.GetComponent<Enemy>().isDead)
+        {
+            Victory();
+        }
+    }
+
+    public void Victory()
+    {
+        VictoryScreen.SetActive(true);
+        Time.timeScale = 1f;
     }
 
     public void Pause()

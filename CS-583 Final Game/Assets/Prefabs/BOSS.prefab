@@ -260,8 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7fca579a34a3c4486af9352efc0591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currHP: 2500
-  maxHP: 2500
+  currHP: 200
+  maxHP: 200
   moveSpeed: 1.5
   rotationSpeed: 10
   attackCD: 0
@@ -275,6 +275,7 @@ MonoBehaviour:
   - {fileID: 8641246681665333135, guid: 58d8c9fc741dc88489e82bf0528e0203, type: 3}
   - {fileID: 8824620223449066514, guid: ea585cd8f8e74024098c0e63065ae4fc, type: 3}
   firePoint: {fileID: 4499095986706632815}
+  isDead: 0
 --- !u!1 &5092629413779575219
 GameObject:
   m_ObjectHideFlags: 0
