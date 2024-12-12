@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8382764963308619469}
   m_Layer: 12
   m_Name: SingleWave(Plr)
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
