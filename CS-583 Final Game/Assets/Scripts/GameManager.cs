@@ -14,8 +14,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerSpawner = GameObject.Find("Player Spawn");
-        Instantiate(playerPrefab, playerSpawner.transform.position + new Vector3(0, 5, 0), Quaternion.Euler(0, 0, 0));
+        //Old Feature
+        //playerSpawner = GameObject.Find("Player Spawn");
+        //Instantiate(playerPrefab, playerSpawner.transform.position + new Vector3(0, 5, 0), Quaternion.Euler(0, 0, 0));
+
         playableChar = GameObject.Find("Player");
 
         gameStarted = true;
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
                 Destroy(playableChar);
                 gameStarted = false;
                 //Invoke game over screen
+
                 //Change scene if needed
             }
 
