@@ -29,7 +29,7 @@ public class PlayerStats : MonoBehaviour
     }
 
     // check how much time has passed to regen mana
-    void FixedUpdate()
+    void Update()
     {
         timePassed += Time.deltaTime;
         if(timePassed > .5f) //change time if needed
@@ -82,27 +82,24 @@ public class PlayerStats : MonoBehaviour
     }
 
     // function to use mana 
-    public void UseMana(int amount)
+    public bool UseMana(int amount)
     {
-        // skip mana usage if there is none
-        if (currentMana <= 0) 
+        // Check if there is enough mana
+        if (currentMana < amount) 
         {
-            return;
+            return false;
         }
 
-        // subtract mana and update mana bar
+        // Deduct mana
         currentMana -= amount;
-        if (currentMana < 0) 
-        {
-            currentMana = 0;
-        }
 
+        // Update mana bar
         if (manaBar != null)
         {
             manaBar.UpdateManaBar(currentMana);
         }
 
-        //Debug.Log("Player used " + amount + " mana. Current mana: " + currentMana);
+        return true; // Deduction succeeded
     }
 
     void Die()

@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +12,8 @@ public class SkillCooldown : MonoBehaviour
         public float cooldownDuration;
         public Image cooldownOverlay; 
         public int manaCost;
-        [HideInInspector] public float cooldownTimer;
+        [HideInInspector] public float cooldownTimer = 0; // Initialize with zero
+        public bool IsOnCooldown => cooldownTimer > 0; // Helper for readability
     }
 
     public Skill[] skills;
@@ -25,57 +28,54 @@ public class SkillCooldown : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q)) UseSkill(2); // Q for the third skill
         if (Input.GetKeyDown(KeyCode.E)) UseSkill(3); // E for the fourth skill
 
-        // Update cooldowns and overlays
-        foreach (var skill in skills)
-        {
-            if (skill.cooldownTimer > 0)
-            {
-                skill.cooldownTimer -= Time.deltaTime;
-                skill.cooldownOverlay.fillAmount = skill.cooldownTimer / skill.cooldownDuration;
-
-                if (!skill.cooldownOverlay.gameObject.activeSelf)
-                    skill.cooldownOverlay.gameObject.SetActive(true);
-            }
-            else if (skill.cooldownOverlay.gameObject.activeSelf)
-            {
-                skill.cooldownOverlay.gameObject.SetActive(false);
-                skill.cooldownOverlay.fillAmount = 0f; // Reset overlay to ensure visual accuracy
-            }
-        }
     }
 
     public void UseSkill(int skillIndex)
     {
-        if (skillIndex < 0 || skillIndex >= skills.Length) 
-        {
-            return;
-        }
+        if (skillIndex < 0 || skillIndex >= skills.Length) return;
 
         Skill skill = skills[skillIndex];
 
-        // Check if skill is on cooldown
-        if (skill.cooldownTimer > 0)
-        {
-            // Prevent further execution if the skill is on cooldown
-            return;
-        }
-
-        // Check if player has enough mana
         if (playerStats.currentMana < skill.manaCost)
         {
-            // Debug.Log($"Not enough mana to use {skill.skillName}!");
+            Debug.Log($"Cannot use {skill.skillName}: Not enough mana.");
             return;
         }
 
-        // Deduct mana and start cooldown
+        if (skill.IsOnCooldown)
+        {
+            Debug.Log($"Cannot use {skill.skillName}: Skill is on cooldown.");
+            return;
+        }
+
+        // Deduct mana and start the cooldown
         playerStats.UseMana(skill.manaCost);
         skill.cooldownTimer = skill.cooldownDuration;
+        StartCoroutine(HandleCooldown(skill));
 
-        // Initialize the visual cooldown overlay
-        skill.cooldownOverlay.fillAmount = 1f;
-
-        // Debug.Log($"Used skill: {skill.skillName}, Mana Cost: {skill.manaCost}");
+        Debug.Log($"Used skill: {skill.skillName}");
     }
+
+
+    private IEnumerator HandleCooldown(Skill skill)
+    {
+        skill.cooldownOverlay.fillAmount = 1f;
+        skill.cooldownOverlay.gameObject.SetActive(true);
+
+        float elapsed = 0;
+        while (elapsed < skill.cooldownDuration)
+        {
+            elapsed += Time.deltaTime;
+            skill.cooldownTimer = Mathf.Clamp(skill.cooldownDuration - elapsed, 0, skill.cooldownDuration);
+            skill.cooldownOverlay.fillAmount = 1f - (elapsed / skill.cooldownDuration);
+            yield return null;
+        }
+
+        skill.cooldownTimer = 0;
+        skill.cooldownOverlay.gameObject.SetActive(false);
+    }
+
+
 }
 
 
