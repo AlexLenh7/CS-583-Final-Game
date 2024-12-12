@@ -3047,6 +3047,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3129,6 +3130,21 @@ Transform:
   - {fileID: 2032311417}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 40.459, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b853ebc5c732b54d952aa4f5d3d9eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1138468479}
+  smooth: 0.1225
+  height: 12
 --- !u!1 &968248754
 GameObject:
   m_ObjectHideFlags: 0
@@ -6206,6 +6222,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2024437074087382883, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6516039762336966280, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: manaBar
       value: 
@@ -6214,6 +6234,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1722095784}
+    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 6874023534666276039, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: m_Name
       value: Player
