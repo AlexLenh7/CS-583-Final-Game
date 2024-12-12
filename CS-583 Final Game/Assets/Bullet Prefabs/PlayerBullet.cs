@@ -63,7 +63,16 @@ public class PlayerBullet : MonoBehaviour
                 collidedWith.GetComponent<Rigidbody>().AddForce(transform.up * pushPower);
 
                 //Ryan did not add health yet so keep this commented until he adds it.
-                collidedWith.GetComponent<Enemy>().TakeDamage(damage);
+                if (collidedWith.GetComponent<Enemy>() != null)
+                {
+                    collidedWith.GetComponent<Enemy>().TakeDamage(damage);
+                }
+
+                if (collidedWith.GetComponent<Boss>() != null)
+                {
+                    collidedWith.GetComponent<Boss>().TakeDamage(damage);
+                }
+
             }
         }
     }
@@ -79,7 +88,15 @@ public class PlayerBullet : MonoBehaviour
             if (collidedWith.CompareTag("EnemyChar"))
             {
                 //Ryan did not add health yet so keep this commented until he adds it.
-                collidedWith.GetComponent<Enemy>().TakeDamage(damage);
+                if (collidedWith.GetComponent<Enemy>() != null)
+                {
+                    collidedWith.GetComponent<Enemy>().TakeDamage(damage);
+                }
+
+                if (collidedWith.GetComponent<Boss>() != null)
+                {
+                    collidedWith.GetComponent<Boss>().TakeDamage(damage);
+                }
                 
                 Destroy(gameObject);
             }

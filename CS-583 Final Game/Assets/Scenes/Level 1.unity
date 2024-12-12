@@ -8983,7 +8983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1722095784}
   manaBar: {fileID: 392836207}
-  maxHP: 100
+  maxHP: 200
   currHP: 0
   maxMana: 100
   currentMana: 0

@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public int currHP;
     public int maxHP = 100;
 
-    // move speed of the Enemy 
+    // move speed of the Enemy
     public float moveSpeed = 3f;
 
     // use to find player
@@ -27,7 +27,6 @@ public class Enemy : MonoBehaviour
     
     // firepoint to spawn bullets
     public Transform firePoint;
-    public bool BossDead = false;
 
     void Awake() {
         // follows player
@@ -89,7 +88,7 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy took " + damage + " damage. Current health: " + currHP);
 
         if (currHP <= 0)
-        {
+        {            
             Destroy(gameObject);
         }
     }

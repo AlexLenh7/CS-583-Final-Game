@@ -101,15 +101,22 @@ public class Boss : MonoBehaviour
 
         if (currHP <= 0)
         {
+            Debug.Log("Boss health reached 0.");
             BossDead = true;
             Debug.Log("BossDead set to true.");
             
-            // Trigger victory logic in the GameManager
+            Debug.Log("Checking GameManager...");
             if (gameManager != null)
             {
+                Debug.Log("GameManager is assigned. Calling Victory...");
                 gameManager.Victory();
             }
-            
+            else
+            {
+                Debug.LogError("GameManager is null! Cannot call Victory.");
+            }
+
+            Debug.Log("Destroying boss object.");
             Destroy(gameObject);
         }
     }
