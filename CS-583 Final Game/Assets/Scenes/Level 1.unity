@@ -373,6 +373,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3968226714583892105, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 5089031193245987467, guid: 480a8926d95629548bb30cde0bca6cd9, type: 3}
     - target: {fileID: 489005095934206154, guid: 7f98c9c86fac30446a7f8eb6c954e752, type: 3}
       propertyPath: m_Name
       value: portalTwo (1)
