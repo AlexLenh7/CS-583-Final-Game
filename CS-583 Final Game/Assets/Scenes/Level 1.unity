@@ -7071,15 +7071,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07bfd7c393a3c9247bb6fdc8c4f1b751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  manaBar: {fileID: 0}
+  healthBar: {fileID: 1722095784}
+  manaBar: {fileID: 392836207}
   maxHP: 100
   currHP: 0
   maxMana: 100
   currentMana: 0
   isDead: 0
   animator: {fileID: 0}
-  manaRegen: 20
+  manaRegen: 2
 --- !u!1001 &2675131555851484610
 PrefabInstance:
   m_ObjectHideFlags: 0
