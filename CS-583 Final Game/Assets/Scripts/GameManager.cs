@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void Victory()
     {
+        Debug.Log("Victory method called successfully.");
         gameWon = true;
         VictoryScreen.SetActive(true);
         Time.timeScale = 0f;

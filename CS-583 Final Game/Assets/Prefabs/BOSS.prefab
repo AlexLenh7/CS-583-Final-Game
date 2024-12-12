@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 2375237312316941935}
   - component: {fileID: 8512575289977764327}
   - component: {fileID: 7012602213934805507}
-  - component: {fileID: -3346442953503154697}
+  - component: {fileID: -6380200611888260748}
   m_Layer: 8
   m_Name: BOSS
   m_TagString: EnemyChar
@@ -248,7 +248,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &-3346442953503154697
+--- !u!114 &-6380200611888260748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4989540344167028829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7fca579a34a3c4486af9352efc0591, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e5a97ef8402347e7a303f818c2d940a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currHP: 200
@@ -274,8 +274,9 @@ MonoBehaviour:
   - {fileID: 7349422093586316064, guid: 45d370f747a179d44854fb7bbd3ea717, type: 3}
   - {fileID: 8641246681665333135, guid: 58d8c9fc741dc88489e82bf0528e0203, type: 3}
   - {fileID: 8824620223449066514, guid: ea585cd8f8e74024098c0e63065ae4fc, type: 3}
-  firePoint: {fileID: 4499095986706632815}
-  isDead: 0
+  firePoint: {fileID: 0}
+  BossDead: 0
+  gameManager: {fileID: 0}
 --- !u!1 &5092629413779575219
 GameObject:
   m_ObjectHideFlags: 0

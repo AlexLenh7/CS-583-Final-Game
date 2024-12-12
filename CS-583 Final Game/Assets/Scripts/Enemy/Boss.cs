@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     // hp of the Enemy
     public int currHP;
     public int maxHP = 100;
 
-    // move speed of the Enemy
+    // move speed of the Enemy 
     public float moveSpeed = 3f;
 
     // use to find player
@@ -27,6 +27,18 @@ public class Enemy : MonoBehaviour
     
     // firepoint to spawn bullets
     public Transform firePoint;
+    public bool BossDead = false;
+
+    public GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene!");
+        }
+    }
 
     void Awake() {
         // follows player
@@ -88,8 +100,25 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy took " + damage + " damage. Current health: " + currHP);
 
         if (currHP <= 0)
-        {            
+        {
+            Debug.Log("Boss health reached 0.");
+            BossDead = true;
+            Debug.Log("BossDead set to true.");
+            
+            Debug.Log("Checking GameManager...");
+            if (gameManager != null)
+            {
+                Debug.Log("GameManager is assigned. Calling Victory...");
+                gameManager.Victory();
+            }
+            else
+            {
+                Debug.LogError("GameManager is null! Cannot call Victory.");
+            }
+
+            Debug.Log("Destroying boss object.");
             Destroy(gameObject);
         }
     }
+
 }
