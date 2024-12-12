@@ -6100,6 +6100,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1722095784}
+    - target: {fileID: 6778134205141921427, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 6874023534666276039, guid: e59315091102e41419ed8e97a1f439e4, type: 3}
       propertyPath: m_Name
       value: Player

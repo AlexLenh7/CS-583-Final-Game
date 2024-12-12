@@ -130,6 +130,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  camera: {fileID: 0}
 --- !u!114 &-3522347508231571989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +176,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &6516039762336966280
 MonoBehaviour:
@@ -219,19 +220,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27d789c370dc07945a7bc279bc4aae5f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27d789c370dc07945a7bc279bc4aae5f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27d789c370dc07945a7bc279bc4aae5f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27d789c370dc07945a7bc279bc4aae5f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27d789c370dc07945a7bc279bc4aae5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -239,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27d789c370dc07945a7bc279bc4aae5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27d789c370dc07945a7bc279bc4aae5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
