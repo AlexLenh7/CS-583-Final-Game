@@ -145,6 +145,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -3280689729926694587, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
+      propertyPath: pushPower
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3280689729926694587, guid: 52ee82f38870f954fa3aa4e2232d8191, type: 3}
       propertyPath: isWindSlash
       value: 1
       objectReference: {fileID: 0}
