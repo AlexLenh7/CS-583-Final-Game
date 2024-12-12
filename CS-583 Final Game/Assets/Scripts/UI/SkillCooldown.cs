@@ -20,10 +20,10 @@ public class SkillCooldown: MonoBehaviour
     {
         // Change change input to something else if needed
         // Check for keyboard input
-        if (Input.GetKeyDown(KeyCode.Alpha1)) UseSkill(0); // Press 1 for the first skill
-        if (Input.GetKeyDown(KeyCode.Alpha2)) UseSkill(1); // Press 2 for the second skill
-        if (Input.GetKeyDown(KeyCode.Alpha3)) UseSkill(2); // Press 3 for the third skill
-        if (Input.GetKeyDown(KeyCode.Alpha4)) UseSkill(3); // Press 4 for the fourth skill
+        if (Input.GetKeyDown(KeyCode.Mouse0)) UseSkill(0); // Press 1 for the first skill
+        if (Input.GetKeyDown(KeyCode.Mouse1)) UseSkill(1); // Press 2 for the second skill
+        if (Input.GetKeyDown(KeyCode.Q)) UseSkill(2); // Press 3 for the third skill
+        if (Input.GetKeyDown(KeyCode.E)) UseSkill(3); // Press 4 for the fourth skill
 
         // Update cooldowns and overlays
         foreach (var skill in skills)

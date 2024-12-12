@@ -12,6 +12,8 @@ public class PlayerStats : MonoBehaviour
     public int currentMana;
     public bool isDead = false;
     public Animator animator;
+    public int manaRegen = 20;
+    float timePassed = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,16 @@ public class PlayerStats : MonoBehaviour
 
         manaBar.InitializeBars(maxMana);
         manaBar.UpdateManaBar(currentMana);
+    }
+
+    void Update()
+    {
+        timePassed += Time.deltaTime;
+        if(timePassed > 3f)
+        {
+            PassiveMana(manaRegen);
+            timePassed = 0f;
+        }
     }
 
     public void TakeDamage(int damage)
@@ -53,6 +65,19 @@ public class PlayerStats : MonoBehaviour
         {
             Die();
         }
+    }
+
+    // passively regenerate mana if mana isn't full
+    public void PassiveMana(int manaAmount)
+    {
+        if (currentMana >= maxMana)
+        {
+            return;
+        }
+
+        currentMana += manaAmount;
+        manaBar.UpdateManaBar(currentMana);
+
     }
 
     // function to use mana 
