@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     // hp of the Enemy
     public int currHP;
@@ -28,6 +28,17 @@ public class Enemy : MonoBehaviour
     // firepoint to spawn bullets
     public Transform firePoint;
     public bool BossDead = false;
+
+    public GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene!");
+        }
+    }
 
     void Awake() {
         // follows player
@@ -90,6 +101,15 @@ public class Enemy : MonoBehaviour
 
         if (currHP <= 0)
         {
+            BossDead = true;
+            Debug.Log("BossDead set to true.");
+            
+            // Trigger victory logic in the GameManager
+            if (gameManager != null)
+            {
+                gameManager.Victory();
+            }
+            
             Destroy(gameObject);
         }
     }
