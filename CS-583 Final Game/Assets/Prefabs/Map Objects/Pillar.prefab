@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2762721793145247458}
   - component: {fileID: 8855719026655119662}
   - component: {fileID: 7024709101343067518}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 7557836329384085442}
   - component: {fileID: 7311115293060475061}
   - component: {fileID: 8968891073881029554}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Pillar
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
