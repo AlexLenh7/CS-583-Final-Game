@@ -20,7 +20,7 @@ public class SkillCooldown: MonoBehaviour
     {
         // Change change input to something else if needed
         // Check for keyboard input
-        if (Input.GetKeyDown(KeyCode.Mouse0)) UseSkill(0); // Press 1 for the first skill
+        if (Input.GetMouseButton(0)) UseSkill(0); // Press 1 for the first skill
         if (Input.GetKeyDown(KeyCode.Mouse1)) UseSkill(1); // Press 2 for the second skill
         if (Input.GetKeyDown(KeyCode.Q)) UseSkill(2); // Press 3 for the third skill
         if (Input.GetKeyDown(KeyCode.E)) UseSkill(3); // Press 4 for the fourth skill

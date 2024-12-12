@@ -68,7 +68,7 @@ public class PlayerBullet : MonoBehaviour
         //If the bullet is NOT a wave, use this path of behavior
         if (isWave == false) //Otherwise, use normal bullet behavior
         {
-            //If it hits a player, deal damage and self destruct
+            //If it hits an enemy, deal damage and self destruct
             if (collidedWith.CompareTag("EnemyChar"))
             {
                 //Ryan did not add health yet so keep this commented until he adds it.
