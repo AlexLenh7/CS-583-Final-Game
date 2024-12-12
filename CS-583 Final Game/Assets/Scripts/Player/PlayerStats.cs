@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     public int currentMana;
     public bool isDead = false;
     public Animator animator;
-    public int manaRegen = 20;
+    public int manaRegen = 20; 
     float timePassed = 0f;
 
     // Start is called before the first frame update
@@ -28,10 +28,11 @@ public class PlayerStats : MonoBehaviour
         manaBar.UpdateManaBar(currentMana);
     }
 
-    void Update()
+    // check how much time has passed to regen mana
+    void FixedUpdate()
     {
         timePassed += Time.deltaTime;
-        if(timePassed > 3f)
+        if(timePassed > .5f) //change time if needed
         {
             PassiveMana(manaRegen);
             timePassed = 0f;
