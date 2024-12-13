@@ -18,6 +18,7 @@ Alex Lenh
 - Updating UI elements
 - Title/pause/menu/death/victory screens
 - Character basic movement
+- HP/MP functionality
 
 Jonathan Nguyen
 - Illustrations
