@@ -27,6 +27,7 @@ Jonathan Nguyen
 - Player models
 - Map Design
 - Title Screen
+- Sound Effects
 
 Terry Tran
 - Map Design
@@ -50,6 +51,7 @@ Ryan Cervantes
 
 Rhenz Ong
 - Camera work
+- Sound Effects
 
 Early Game WIP Video
 https://youtu.be/C1ePHHeYYsQ
