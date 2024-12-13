@@ -38,6 +38,7 @@ Scott Billitti
 - Player to map interaction
 - Map to player interaction
 - Wave enemy spawning
+- Map Design
 
 Ryan Cervantes
 - Enemy AI
@@ -49,7 +50,6 @@ Ryan Cervantes
 Rhenz Ong
 - Sound effects
 - Camera work
-- Item pickups (not set in stone)
 
 Early Game WIP Video
 https://youtu.be/C1ePHHeYYsQ
