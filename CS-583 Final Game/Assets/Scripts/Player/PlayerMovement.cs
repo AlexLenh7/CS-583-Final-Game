@@ -12,9 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
 
-    [Header("Audio")]
-    public AudioSource audioSource; // Reference to the AudioSource component
-    public AudioClip jumpSound; // Assign your jump audio clip in the Inspector
+    [SerializeField] private AudioClip jumpSound;
 
     void Update()
     {
@@ -62,11 +60,7 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = jumpForce;
 
-            // Play jump sound
-            if (audioSource != null && jumpSound != null)
-            {
-                audioSource.PlayOneShot(jumpSound);
-            }
+            SoundManager.instance.PlaySound(jumpSound);
         }
 
         velocity.y += gravity * Time.deltaTime;

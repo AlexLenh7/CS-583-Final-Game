@@ -25,6 +25,11 @@ public class PlayerAttacks : MonoBehaviour
     private float cooldownTimerBurst = Mathf.Infinity;
     private float cooldownTimerWind = Mathf.Infinity;
 
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip beamSound;
+    [SerializeField] private AudioClip burstSound;
+    [SerializeField] private AudioClip windSound;
+
     void Update()
     {
         if (Input.GetMouseButton(0) && cooldownTimerSingle > attackCooldownSingle)
@@ -49,24 +54,28 @@ public class PlayerAttacks : MonoBehaviour
     {
         Instantiate(singleShot, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
         cooldownTimerSingle = 0;
+        SoundManager.instance.PlaySound(shootSound);
     }
 
     void shootBeam()
     {
         Instantiate(Beam, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
         cooldownTimerBeam = 0;
+        SoundManager.instance.PlaySound(beamSound);
     }
 
     void shootBurst()
     {
         Instantiate(Burst, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
         cooldownTimerBurst = 0;
+        SoundManager.instance.PlaySound(burstSound);
     }
 
     void shootWind()
     {
         Instantiate(Wind, bulletSpawnPoint.transform.position, Quaternion.Euler(0, transform.rotation.eulerAngles.y + 270, 0));
         cooldownTimerWind = 0;
+        SoundManager.instance.PlaySound(windSound);
     }
 
 }
