@@ -7151,9 +7151,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1987484206}
     - target: {fileID: -7573454974305137645, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
+      propertyPath: pauseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e5fae5490a5734f43978e9e909a38f51, type: 3}
+    - target: {fileID: -7573454974305137645, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
+      propertyPath: victorySound
+      value: 
+      objectReference: {fileID: 8300000, guid: 37dd124e56e541348a67da4311876379, type: 3}
+    - target: {fileID: -7573454974305137645, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
       propertyPath: VictoryScreen
       value: 
       objectReference: {fileID: 567683040}
+    - target: {fileID: -7573454974305137645, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
+      propertyPath: gameOverSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 35fa7050dc285264b9e19e06bfaa1e62, type: 3}
+    - target: {fileID: -7573454974305137645, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
+      propertyPath: interactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9159d6361715c594eb70f648eeec88ac, type: 3}
     - target: {fileID: 6688941486300598488, guid: 335b26e3126adeb4ea39e483faf6b4b0, type: 3}
       propertyPath: m_Name
       value: GameOverlord

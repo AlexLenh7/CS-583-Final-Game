@@ -879,6 +879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 571a357261104024282156dc0a8a4016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactSound: {fileID: 8300000, guid: 9159d6361715c594eb70f648eeec88ac, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

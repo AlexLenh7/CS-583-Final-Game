@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Boss;
     private GameObject Bosschar;
 
+    [SerializeField] private AudioClip interactSound;
+    [SerializeField] private AudioClip victorySound;
+    [SerializeField] private AudioClip gameOverSound;
+    [SerializeField] private AudioClip pauseSound;
+
+    
     public GameObject gameOverUI;
     public GameObject pauseMenu;
     public GameObject VictoryScreen;
@@ -69,36 +75,42 @@ public class GameManager : MonoBehaviour
         gameWon = true;
         VictoryScreen.SetActive(true);
         Time.timeScale = 0f;
+        SoundManager.instance.PlaySound(victorySound);
     }
 
     public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
+        SoundManager.instance.PlaySound(pauseSound);
     }
 
     public void Resume()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        SoundManager.instance.PlaySound(interactSound);
     }
 
     void gameOver()
     {
         // Display game over screen
         gameOverUI.SetActive(true);
+        SoundManager.instance.PlaySound(gameOverSound);
     }
 
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
+        SoundManager.instance.PlaySound(interactSound);
         Debug.Log("Restart successful");
     }
 
     public void Menu()
     {
         SceneManager.LoadScene("TitleScreen");
+        SoundManager.instance.PlaySound(interactSound);
         Debug.Log("Back to Title screen");
     }
 
